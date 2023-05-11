@@ -1,20 +1,25 @@
 package fiap.com.br.Jogador;
 
-public class Guerreiro extends Jogador{
+public abstract class Guerreiro extends Jogador implements Fase {
 	
 	private int x;
 	private int y;
 	
 	
+	public Guerreiro() {
+		super();
 	
+	}
 	public Guerreiro(String nome) {
 		super(nome);
+		
+	}
+	@Override
+	public void mover(int x, int y) {
+		System.out.printf("o guerreiro se moveu nas direções:", x,y);
+		
 	}
 	
-	public void mover(int x, int y) {
-        this.x = x;
-        this.y = y;
-        System.out.println(getNome() + " moveu-se para x=" + x + ", y=" + y);
-    }
+
 
 }

@@ -21,6 +21,8 @@ public class Jogo {
 
         jogador2.atacar(jogador1);
         mostrarJogador(jogador1);
+        
+         Fase mago = new Mago("harry",15, 78);
 
         System.out.println("Jogador 2 " + jogador2.getNome() + " XP=" + jogador2.getXp() +
                            " HP=" + jogador2.getHp() +
@@ -31,4 +33,6 @@ public class Jogo {
         System.out.println("Jogador 1 " + jogador1.getNome() + " XP=" + jogador1.getXp() + " HP=" + jogador1.getHp() + " Env=" 
                            + jogador1.isEnvenenado());
     }
+    
+    
 }

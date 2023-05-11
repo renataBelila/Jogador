@@ -1,7 +1,6 @@
 package fiap.com.br.Jogador;
 
-public class Fase {
-	
-	
-
+public interface Fase {
+	void mover(int x, int y);
+   
 }
